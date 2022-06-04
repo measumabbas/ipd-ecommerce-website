@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Kristi&display=swap');
+/* font-family: 'Kristi', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    font-family: 'Cabin', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+input{
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+body{
+}
+.flex{
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+
+
+/* Top header styling*/
+.header-upper{
+    background-color: black;
+    padding: 5px 0px;
+    z-index: -1;
+}
+.header-upper-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 14px;
+    
+}
+
+.left{
+    gap: 40px;
+}
+
+.left-left{
+    gap: 20px;
+}
+.left-right{
+    gap: 15px;
+    cursor: pointer;
+}
+
+.left-right:hover{
+    color: #FFAB17;
+}
+.left-left p{
+    letter-spacing: 2px;
+}
+
+.right span{
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.right span:hover{
+    color: #FFAB17;
+}
+
+.icons{
+    display: flex;
+    gap: 5px;
+}
+.icons i:hover{
+    color: #FFAB17;
+    cursor: pointer;
+}
+
+
+/* Login conteiner styling */
+
+.login-container .login-body .logo p{
+    font-family: 'Kristi', cursive;
+    font-size: 45px;
+    color: #FFCC05;
+
+}
+
+.login{
+    position: absolute;
+    /* top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    /* height: 100%; */
+    /* width: 100%; */
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1c;
+    gap: 15px;
+    /* display: none; */
+}
+.login-upper{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+.login-upper p{
+    padding: 20px 60px;
+    cursor: pointer;
+}
+
+/* .login-upper p:last-child{
+    background-color: #333333;
+} */
+.upper-main-container{
+    background-color: #333333;
+    height: 90vh;
+}
+
+.login-body{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.input input{
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input input[type='submit']{
+    background-color: #FFCC05;
+    letter-spacing: 3px;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.input input[type='submit']:hover{
+    background-color: #333333;
+
+}
+
+.login-body .logo{
+    margin-left: 80px;
+}
+
+.login-back-color{
+    background-color: #333333;
+}
