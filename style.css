@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all .2s linear;
+    /* transition: all .2s linear; */
     font-family: 'Cabin', sans-serif;
 }
 
@@ -197,7 +197,6 @@ body{
     background-color: rgba(0,0,0,0.4);
 }
 .header-main{
-    
 }
 .header-min{
     display: flex;
@@ -312,6 +311,7 @@ a.nav-tab{
     right: -1000px;
     z-index: 10001;
     overflow-y: scroll;
+    transition: right .5s ease-out;
 
 }
 
@@ -435,6 +435,7 @@ a.nav-tab{
     height: 0px;
     padding: 0;
     overflow: hidden;
+    transition: height .5s ease;
 }
 .dest-drop{
     position: absolute;
@@ -450,6 +451,7 @@ a.nav-tab{
     left: 130px;
     height: 0px;
     overflow: hidden;
+    transition: height .5s ease;
 }
 .page-drop li,.dest-drop li{
     padding-left: 30px;
@@ -586,8 +588,22 @@ option{
     font-size: 17px;
     letter-spacing: 1px;
     text-transform: uppercase;
-
+    cursor: pointer;
 }
 .upper-form-input.submit:hover{
     background-color: #1c1c1c;
+}
+
+
+.fixed-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding-bottom: 15px;
+
+}
+.fixed-top .nav-tab{
+    color: #000;
 }

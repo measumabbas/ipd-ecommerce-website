@@ -152,4 +152,25 @@ setInterval(function(){
         currentIndex=0;
     }
     video.setAttribute('src',`${src[currentIndex]}`);
-},6000)
+},6000);
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 180) {
+            document.querySelector('.header-main').classList.add('fixed-top');
+            // add padding top to show content behind navbar
+            navbar_height = document.querySelector('.header-main').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+            const logo = document.querySelector('#logo');
+            logo.setAttribute('src','/images/logo-dark.png');
+        } else {
+            document.querySelector('.header-main').classList.remove('fixed-top');
+            // remove padding top from body
+            document.body.style.paddingTop = '0';
+            logo.setAttribute('src','/images/logo-light.png')
+        }
+    });
+});
