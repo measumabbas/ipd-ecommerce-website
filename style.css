@@ -514,13 +514,13 @@ a.nav-tab{
     margin-top: 20px;
 }
 .upper-main-content{
-    margin-top: 100px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* position: relative; */
-    z-index: 1;
+  
     
 }
 
@@ -528,9 +528,11 @@ p.top-text{
     font-family: 'Kristi', cursive;
     color: #FFCC05;
     font-size: 50px;
-    position: absolute;
-    top: 110px;
-    left: 430px;
+    /* position: absolute; */
+    /* top: 110px;
+    left: 430px; */
+    /* transform: translateX(-130px); */
+    margin-left: -220px;
 }
 
 .upper-form-input svg{
