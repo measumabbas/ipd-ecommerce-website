@@ -66,3 +66,24 @@ document.getElementById('main-login').addEventListener('click', function () {
 document.getElementById('login-container').addEventListener('click', function (e) {
     e.stopPropagation();
 });
+
+
+const headerMain = document.querySelector('.header-main');
+const searchBar = document.querySelector('.search-bar');
+const searchIcon = document.querySelector('#searchIcon');
+const closeIcon = document.querySelector('#closeIcon');
+
+searchIcon.addEventListener('click',()=>{
+    headerMain.style.display='none';
+    searchBar.style.display='flex';
+});
+
+closeIcon.addEventListener('click',()=>{
+    searchBar.style.display='none';
+    headerMain.style.display='block';
+})
+
+window.onscroll = ()=>{
+    searchBar.style.display='none';
+    headerMain.style.display='block';
+}
