@@ -87,3 +87,17 @@ window.onscroll = ()=>{
     searchBar.style.display='none';
     headerMain.style.display='block';
 }
+
+
+// Handling right slider
+
+const bar = document.querySelector('#bar');
+const rightSlider = document.querySelector('.right-slider');
+const closeRightslider = document.querySelector('#right-slider-close');
+
+bar.addEventListener('click',()=>{
+    rightSlider.style.right='0px';
+});
+closeRightslider.addEventListener('click',()=>{
+    rightSlider.style.right='-1000px'
+})
