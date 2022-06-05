@@ -101,3 +101,55 @@ bar.addEventListener('click',()=>{
 closeRightslider.addEventListener('click',()=>{
     rightSlider.style.right='-1000px'
 })
+
+// Slider Logic
+
+src = ['/images/videos/vid-1.mp4','/images/videos/vid-2.mp4','/images/videos/vid-3.mp4','/images/videos/vid-4.mp4','/images/videos/vid-5.mp4'];
+
+const rightChevron = document.querySelector('.right-chevron');
+const leftChevron = document.querySelector('.left-chevron');
+const video = document.getElementById('back-video');
+let currentIndex = 0;
+
+
+rightChevron.addEventListener('click',()=>{
+    currentIndex++;
+    if(currentIndex > 4){
+        currentIndex=0;
+    }
+    if(currentIndex>=0 && currentIndex<=4){
+        video.setAttribute('src',`${src[currentIndex]}`);
+    }
+})
+leftChevron.addEventListener('click',()=>{
+    if(currentIndex < 0){
+        currentIndex=4;
+    }
+   else{
+        currentIndex--;
+    }
+    if(currentIndex>=0 && currentIndex<=4){
+        video.setAttribute('src',`${src[currentIndex]}`);
+    }
+})
+
+
+const upperText = document.querySelector('.top-text');
+console.log(upperText === 'Adventurous');
+
+setInterval(function () {
+    if(upperText.textContent === 'Adventurous'){
+        upperText.textContent ='Life Changing';
+    }else{
+        upperText.textContent ='Adventurous';
+    }
+}, 3000);
+
+
+setInterval(function(){
+    currentIndex++;
+    if(currentIndex>4){
+        currentIndex=0;
+    }
+    video.setAttribute('src',`${src[currentIndex]}`);
+},6000)
