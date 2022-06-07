@@ -176,3 +176,59 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+
+const reviewData = [
+
+    {
+        place:'Ancient Pyramids',
+        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta voluptatem, cupiditate vel sequi ullam, magni hic, nesciunt incidunt iste nostrum provident. Iste maiores tempore nesciunt pariatur. Ullam, aliquam.',
+        userName:'Measum Abbas',
+        img:'/images/user-2-100x100.jpg'
+    },
+    {
+        place:'Adventure Alaska',
+        text:'Always available, extremely knowledgeable, and a tremendous "can-do" attitude. Our company was on a tight timeline and strict budget to create a first-class mobile interpretation app, and Will was the perfect partner..',
+        userName:'Karin Thomas',
+        img:'/images/author-2-100x100.jpg'
+    },
+    {
+        place:'Action Safari',
+        text:'The Pacific Grove Chamber of Commerce would like to thank eLab Communications and Mr. Will Elkadi for all the efforts and suggestions that assisted us in better positioning ourselves in ',
+        userName:'Naila Jabeen',
+        img:'/images/user-1-100x100.jpg'
+    }
+]
+const placeName = document.querySelector('.slide-name');
+const slideText = document.querySelector('.slide-text');
+const userName = document.querySelector('.slide-user');
+const img = document.querySelector('#user-image');
+
+const dots = document.querySelectorAll('.slider-dot');
+
+let sliderIndex = 0;
+setInterval(()=>{
+
+    if(sliderIndex>2){
+        sliderIndex=0;
+    }
+    placeName.textContent = reviewData[sliderIndex].place;
+    slideText.textContent = reviewData[sliderIndex].text;
+    userName.textContent = reviewData[sliderIndex].userName;
+    img.setAttribute('src',reviewData[sliderIndex].img);
+    dots.forEach((dot,index)=>{
+        if(index === sliderIndex){
+            dot.classList.add('first');
+        }else{
+            dot.classList.remove('first');
+        }
+    })
+
+
+    sliderIndex++
+
+},5000)
+
+
+
