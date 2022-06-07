@@ -166,11 +166,13 @@ document.addEventListener("DOMContentLoaded", function () {
             document.body.style.paddingTop = navbar_height + 'px';
             const logo = document.querySelector('#logo');
             logo.setAttribute('src','/images/logo-dark.png');
+            searchIcon.style.display='none';
         } else {
             document.querySelector('.header-main').classList.remove('fixed-top');
             // remove padding top from body
             document.body.style.paddingTop = '0';
             logo.setAttribute('src','/images/logo-light.png')
+            searchIcon.style.display='block';
         }
     });
 });
