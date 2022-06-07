@@ -602,6 +602,7 @@ option{
     right: 0;
     background-color: #fff;
     padding-bottom: 15px;
+    transition-duration:.5s;
 
 }
 .fixed-top .nav-tab{
