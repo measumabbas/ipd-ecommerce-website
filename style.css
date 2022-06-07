@@ -309,7 +309,7 @@ a.nav-tab{
     position: fixed;
     top: 0;
     right: -1000px;
-    z-index: 10001;
+    z-index: 100011;
     overflow-y: scroll;
     transition: right .5s ease-out;
 
@@ -437,6 +437,32 @@ a.nav-tab{
     overflow: hidden;
     transition: height .5s ease;
 }
+.cart-drop{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #141414;
+    /* left: 20px; */
+    /* padding: 30px; */
+    width: 250px;
+    top: 40px;
+    gap: 20px;
+    /* right: 10px; */
+    right: -100px;
+    height: 0px;
+    padding: 0;
+    overflow: hidden;
+    /* transition: height .5s ease; */
+}
+.cart-drop li{
+    padding: 15px;
+}
+.cart-drop li a{
+    color: #9F9F9F;
+    font-size: 18px;
+}
 .dest-drop{
     position: absolute;
     display: flex;
@@ -453,28 +479,181 @@ a.nav-tab{
     overflow: hidden;
     transition: height .5s ease;
 }
-.page-drop li,.dest-drop li{
+
+.tours-drop{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #141414;
+    /* left: 20px; */
+    /* padding: 30px; */
+    width: 200px;
+    top: 40px;
+    gap: 20px;
+    /* right: 10px; */
+    left: 270px;
+    height: 0px;
+    overflow: hidden;
+    transition: height .5s ease;
+}
+
+.blog-drop{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #141414;
+    /* left: 20px; */
+    /* padding: 30px; */
+    width: 200px;
+    top: 40px;
+    gap: 20px;
+    /* right: 10px; */
+    left: 350px;
+    height: 0px;
+    overflow: hidden;
+    transition: height .5s ease;
+}
+
+.shop-drop{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #141414;
+    /* left: 20px; */
+    /* padding: 30px; */
+    width: 200px;
+    top: 40px;
+    gap: 20px;
+    /* right: 10px; */
+    left: 450px;
+    height: 0px;
+    overflow: hidden;
+    transition: height .5s ease;
+}
+
+.elements-drop{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    background-color: #141414;
+    /* left: 20px; */
+    /* padding: 30px; */
+    /* width: 1100px; */
+    top: 40px;
+    width: 120%;
+    gap: 30px;
+    /* right: 10px; */
+    left: -200px;
+    height: 0px;
+    overflow: hidden;
+    transition: height .5s ease;
+    /* padding: 30px 10px; */
+}
+.elements-drop ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.elements-drop ul li a,
+.elements-drop ul li h3{
+    color: #9F9F9F;
+}
+.elements-drop ul li h3{
+    padding-top: 30px;
+}
+.page-drop li,
+.dest-drop li,
+.tours-drop li,
+.blog-drop li,
+.shop-drop li{
     padding-left: 30px;
 }
-.page-drop li a,.dest-drop li a{
+.page-drop li a,
+.dest-drop li a,
+.tours-drop li a,
+.blog-drop li a,
+.shop-drop li a{
     color: #9F9F9F;
     font-size: 14px;
 }
-.page-drop li:first-child,.dest-drop li:first-child{
+.page-drop li:first-child,
+.dest-drop li:first-child,
+.tours-drop li:first-child,
+.blog-drop li:first-child,
+.shop-drop li:first-child{
     padding-top: 30px;
 }
+.page-drop li:last-child,
+.dest-drop li:last-child,
+.tours-drop li:last-child,
+.blog-drop li:last-child,
+.shop-drop li:last-child{
+    padding-bottom: 30px;
+}
 
-.page-drop li a:hover,.dest-drop li a:hover{
+.page-drop li a:hover,
+.dest-drop li a:hover{
     color: #FFCC05;
 }
 .page-link:hover .page-drop{
     height: 270px;
     /* padding: 30px; */
 }
+.elements-link:hover .elements-drop{
+    height: 440px;
+    /* padding: 30px; */
+}
 .dest-link:hover .dest-drop{
     height: 100px;
 }
+.cart:hover .cart-drop{
+    height: 60px;
+}
 
+.ul-nav li{
+    cursor: pointer;
+}
+.tours-link:hover .tours-drop,.shop-link:hover .shop-drop{
+    height: 150px;
+}
+.tour-sub-link1{
+    text-overflow: ellipsis;
+}
+
+.blog-link:hover .blog-drop{
+    height: 150px;
+}
+/* .tour-sub-link1:hover .tours-sub-drop1{
+    height: 100px;
+} */
+.tour-sub-link1:hover .tours-drop{
+    overflow: visible;
+}
+
+a.drop-item.sub{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.tours-sub-drop1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #141414;
+    /* left: 20px; */
+    /* padding: 30px; */
+    width: 200px;
+    top: 100px;
+    gap: 20px;
+    /* right: 10px; */
+    left: 470px;
+    /* height: 0px; */
+    overflow: hidden;
+    transition: height .5s ease;
+    text-overflow: ellipsis;
+}
 .left-chevron,.right-chevron{
     cursor: pointer;
     z-index: 1000;
