@@ -954,7 +954,7 @@ option{
     position: absolute;
     bottom: 30px;
     left: 30px;
-    z-index: 1000;
+    z-index: 1;
 }
 .place-content p{
     color: #fff;
@@ -1106,4 +1106,362 @@ option{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+
+section.more-place{
+    max-width: 1100px;
+    margin: 100px auto;
+}
+
+.image-gallery{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 15px;
+}
+
+.image-gallery img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.image-gallery img:hover{
+
+    transform: scale(1.1);
+}
+
+.image-gallery div{
+    overflow: hidden;
+}
+
+
+.image-left-bottom{
+    display: flex;
+    gap: 15px;
+}
+.img-abs{
+    position: relative;
+}
+.img-abs p{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+}
+.image-left-top{
+    margin-bottom: 12px;
+}
+.more-place-text p{
+    text-align: center;
+    color: #818181;
+    font-size: 20px;
+    width: 60%;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+.more-place-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more-place h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    color: #303030;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.see-more-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.see-more-btn a{
+    background-color: #FFCC05;
+    color: #fff;
+    padding: 15px 50px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.see-more-btn a:hover{
+    background-color: #1c1c1c;
+}
+
+.adventure{
+    display: flex;
+}
+.adventure-left{
+    width: 50%;
+}
+.adventure-right{
+    width: 50%;
+}
+.adventure img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.adventure-left{
+    position: relative;
+    background-color: #1C1C1C;
+    overflow: hidden;
+    
+}
+
+.adventure-left-content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.adventure-left-content span{
+    font-size: 65px;
+    font-family: 'Kristi', cursive;
+    color: #FFCC05;
+}
+.adventure-left-content h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    color: #fff;
+}
+
+.adventure-left-content p{
+    font-size: 17px;
+    color: #fff;
+    width: 80%;
+    text-align: center;
+    line-height: 1.7;
+}
+.adventure-left-content a{
+    color: #FFCC05;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid #FFCC05;
+}
+.adventure-left img{
+    transition-duration:  1s;
+    transform: translateX(60px);
+}
+.adventure-left:hover img{
+    transform: translateX(0px);
+}
+
+.offers-container{
+    max-width: 1100px;
+    margin: 200px auto;
+}
+
+.offers-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.offers-images img{
+    width: 100%;
+    height: 100%;
+}
+.offer-card{
+    position: relative;
+    margin-bottom: 30px;
+    height: 450px;
+    cursor: pointer;
+}
+.offer-card:hover .overlay{
+    display: block;
+}
+.offer-card:hover span.offers-lorm{
+    display: block;
+}
+
+.offers-inner-text{
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
+    z-index: 1;
+}
+
+/* .offers-middle .offer-card{
+    height: 53%;
+} */
+.offers-middle .offer-card:first-child{
+    height: 60%;
+}
+
+.offers-inner-text p{
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.offers-inner-text span.offers-lorm{
+    color: #fff;
+    display: block;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.offers-inner-text span:last-child{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.offers-container h1{
+    text-align: center;
+    color: #303030;
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+.offers-top-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offers-top-text p{
+    color: #818181;
+    font-size: 17px;
+    line-height: 1.5;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.tour{
+    background: url('/images/h1-background-3.jpg');
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.tour-container{
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.tour-container h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+}
+
+.tour-upper-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.tour-upper-text p{
+    width: 60%;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.tour-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tour-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.tour-icon span{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.tour-icon:hover span{
+    color: #FFCC05;
+}
+
+.blog h1{
+    text-align: center;
+    font-size: 50px;
+    color: #303030;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+.blogs-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.blogs-container img{
+    width: 100%;
+    transition: transform .5s;
+}
+
+.blog-content p{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #303030;
+    font-weight: bolder;
+    line-height: 1.4;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.blog-content p:hover{
+    color: #FFCC05;
+}
+.blog-date{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 40px;
+    color: #9F9F9F;
+}
+
+
+.blog-item{
+    margin-bottom: 40px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.blog-item:hover img{
+
+    transform: scale(1.1);
+}
+.date:hover{
+    color: #FFCC05;
+}
+.comments:hover{
+    color: #FFCC05;
 }

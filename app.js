@@ -230,5 +230,47 @@ setInterval(()=>{
 
 },5000)
 
+const tourSrc = ['/images/h1-custom-icon-1-hover.png','/images/h1-custom-icon-2-hover.png','/images/h1-custom-icon-3-hover.png','/images/h1-custom-icon-4-hover.png','/images/h1-custom-icon-5-hover.png'];
+const tourDef = ['/images/h1-custom-icon-1.png','/images/h1-custom-icon-2.png','/images/h1-custom-icon-3.png','/images/h1-custom-icon-4.png','/images/h1-custom-icon-5.png'];
 
+const tourIcons = document.querySelectorAll('.tour-icon');
+
+tourIcons.forEach((icon,index)=>{
+    icon.addEventListener('mouseover',()=>{
+
+        const firstChild = icon.firstElementChild;
+        if(index===0){
+            firstChild.setAttribute('src',tourSrc[0])
+        }else if(index===1){
+            firstChild.setAttribute('src',tourSrc[1])
+        }else if(index===2){
+            firstChild.setAttribute('src',tourSrc[2])
+        }else if(index===3){
+            firstChild.setAttribute('src',tourSrc[3])
+        }else if(index===4){
+            firstChild.setAttribute('src',tourSrc[4])
+        }else{
+            // firstChild.setAttribute('src','/images/h1-custom-icon-1.png')
+        }
+    })
+})
+tourIcons.forEach((icon,index)=>{
+    icon.addEventListener('mouseout',()=>{
+
+        const firstChild = icon.firstElementChild;
+        if(index===0){
+            firstChild.setAttribute('src',tourDef[0])
+        }else if(index===1){
+            firstChild.setAttribute('src',tourDef[1])
+        }else if(index===2){
+            firstChild.setAttribute('src',tourDef[2])
+        }else if(index===3){
+            firstChild.setAttribute('src',tourDef[3])
+        }else if(index===4){
+            firstChild.setAttribute('src',tourDef[4])
+        }else{
+            // firstChild.setAttribute('src','/images/h1-custom-icon-1.png')
+        }
+    })
+})
 
