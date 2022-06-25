@@ -58,7 +58,9 @@ loginBtn.addEventListener('click', () => {
     console.log('clicked');
 });
 
-
+document.getElementById('user').addEventListener('click',()=>{
+    loginModal.style.display = 'flex';
+})
 document.getElementById('main-login').addEventListener('click', function () {
     loginModal.style.display = 'none';
 });
@@ -177,6 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+console.log(screen.width)
 
 
 const reviewData = [
@@ -274,3 +277,61 @@ tourIcons.forEach((icon,index)=>{
     })
 })
 
+
+const pageLink = document.querySelector('.page-link');
+const pageDrop = document.querySelector('.page-drop-custom');
+const pageIcon = document.querySelector('.page-icon');
+pageLink.addEventListener('click',()=>{
+
+        pageDrop.classList.toggle('height');
+        pageIcon.classList.toggle('rotate');
+
+
+})
+const destLink = document.querySelector('.dest-link');
+const destDrop = document.querySelector('.dest-drop-custom');
+const destIcon = document.querySelector('.dest-icon');
+destLink.addEventListener('click',()=>{
+
+    destDrop.classList.toggle('height');
+    destIcon.classList.toggle('rotate');
+
+
+})
+const tourLink = document.querySelector('.tours-link');
+const tourDrop = document.querySelector('.tours-drop-custom');
+const tourIcon = document.querySelector('.tours-icon');
+tourLink.addEventListener('click',()=>{
+
+    tourDrop.classList.toggle('height');
+    tourIcon.classList.toggle('rotate');
+
+
+})
+const blogLink = document.querySelector('.blog-link');
+const blogDrop = document.querySelector('.blog-drop-custom');
+const blogIcon = document.querySelector('.blog-icon');
+blogLink.addEventListener('click',()=>{
+
+    blogDrop.classList.toggle('height');
+    blogIcon.classList.toggle('rotate');
+
+
+})
+const shopLink = document.querySelector('.shop-link');
+const shopDrop = document.querySelector('.shop-drop-custom');
+const shopIcon = document.querySelector('.shop-icon');
+shopLink.addEventListener('click',()=>{
+
+    shopDrop.classList.toggle('height');
+    shopIcon.classList.toggle('rotate');
+
+
+})
+
+const nav = document.querySelector('.ul-nav');
+const ham = document.querySelector('#ham');
+ham.addEventListener('click',()=>{
+    nav.classList.toggle('ham-height');
+    ham.classList.toggle('rotate');
+})
