@@ -1465,3 +1465,268 @@ section.more-place{
 .comments:hover{
     color: #FFCC05;
 }
+
+
+
+/* Join Newsletter section */
+
+.join-upper{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url('/images/h1-img-7.jpg');
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50px);
+    z-index: 1;
+    position: relative;
+}
+
+.join-upper-input{
+    width: 75%;
+    display: flex;
+}
+.join-upper-text{
+    width: 25%;
+}
+.join-upper-text h2{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color: #303030;
+    margin-bottom: 7px;
+}
+.join-upper-text p{
+    font-size: 18px;
+    font-weight: 900;
+    color: #303030;
+}
+
+.join-upper-input input[type='email']{
+    width: 80%;
+    padding: 15px;
+    font-size: 18px;
+}
+.join-upper-input input[type='submit']{
+    width: 20%;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #303030;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.join{
+    margin-bottom: 200px;
+}
+
+.join-lower{
+    display: flex;
+    background-color: #F7F7F7;
+    height: 600px;
+}
+
+.join-lower-img{
+    width: 50%;
+
+    position: relative;
+}
+.join-lower-content{
+    width: 50%;
+}
+.join-lower-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.join-lower-text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.join-lower-text p{
+    font-size: 200px;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    transform: translateX(60px);
+}
+
+.join-lower-text span{
+    color: #FFCC05;
+    font-family: 'Kristi', cursive; 
+    font-size: 150px;
+    transform: translate(-50px,-80px);
+}
+
+.join-lower-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+}
+.join-lower-content h1{
+    color: #303030;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+.join-lower-content p{
+    color: #9F9F9F;
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.join-lower-content a{
+    color: #FFCC05;
+    padding: 5px;
+    border-bottom: 2px solid #FFCC05;
+    letter-spacing: 1px;
+}
+
+
+/* Footer styling */
+
+.footer{
+    background-color: #141414;
+    color: #fff;
+}
+
+.footer-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+p.footer-head{
+    font-size: 20px;
+    margin-bottom: 36px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.footer-first img{
+    
+    margin-bottom: 20px;
+}
+.footer-first p{
+    color: #cdc8c8;
+    margin-bottom: 20px;
+}
+.footer-fourth img{
+    width: 100%;
+}
+
+.footer-icons div{
+    display: flex;
+    gap: 15px;
+}
+.footer-icons div i{
+    color: #FFCC05;
+}
+.footer-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #cdc8c8;
+}
+
+.footer-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.footer-second div{
+    margin-bottom: 20px;
+    color: #cdc8c8;
+    line-height: 1.5;
+}
+.footer-second div span{
+    color: #818181;
+    font-size: 14px;
+}
+.footer-second div p{
+    margin-bottom: 10px;
+}
+
+.footer-third div{
+    margin-bottom: 15px;
+    line-height: 1.3;
+
+}
+.footer-third div p{
+    color: #cdc8c8;
+}
+.footer-third div p span{
+    color: #818181;
+    cursor: pointer;
+
+}
+.footer-third div p span:hover{
+    color: #FFCC05;
+}
+
+.footer-fourth .icons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-img img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: .5s;
+
+}
+.footer-img div{
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.footer-second div p:hover, .footer-second div span:hover{
+    color: #FFCC05;
+    cursor: pointer;
+}
+
+.footer-first div span:hover{
+    cursor: pointer;
+    color: #FFCC05;
+}
+
+
+
+/* Media queries */
+
+/* @media(max-width:1120px){
+    .header-upper{
+        display: none;
+    }
+    .header-main{
+        background-color: #fff;
+        color: #000;
+
+    }
+    .header-main a{
+        color: #000;
+    }
+
+    .header-nav ul{
+        flex-direction: column;
+    }
+} */
